@@ -151,3 +151,121 @@ h4 {
     color: #181D1F;
     width: 270px;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.victory_background {
+    padding: 72px 0 72px 0;
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+    background: linear-gradient(270deg, #E4F5FF 0%, #FFFFFF 100%);
+}
+
+.victory_h4 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: #181D1F;
+    margin-top: 28px;
+    margin-bottom: 32px;
+}
+
+.victory_descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #181D1F;
+    width: 872px;
+}
+
+.modal-bgd {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(24 29 31 / 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-form {
+    background: #FFF;
+    padding: 32px 92px 60px 92px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.modal-form_h5 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #181D1F;
+    margin: 32px 0 12px 0;
+}
+
+.modal-form_descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #181D1F;
+    margin-bottom: 24px;
+}
+
+.field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #181D1F;
+    margin-bottom: 8px;
+}
+
+.input {
+    border: 1px solid #005BBB;
+    border-radius: 8px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #181D1F;
+    padding: 4px 8px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    color: #1B1D1F;
+    cursor: pointer;
+    border: 0;
+    background: none;
+}
+
+.modal-active {
+    opacity: 1;
+    pointer-events: all;
+}

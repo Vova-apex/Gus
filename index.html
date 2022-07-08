@@ -28,7 +28,7 @@
                     <h2 class="banderogus-h2">На старт. Увага. Полетіли!</h2>
                     <h1>Бандерогусь</h1>
                     <p class="banderogus-deskr">Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми подвигами, бороню Батьківщину та підтримую позитивний дух народу. Слава Україні!</p>
-                    <button class="b-gus-launch">Запустити гуся</button>
+                    <button class="b-gus-launch" id="open-form-modal-btn">Запустити гуся</button>
                 </div>
 
                 <img src="./img/gus.svg" alt="Селфи гуся" class="selfi">
@@ -59,6 +59,52 @@
             </li>
         </ul>
     </section>
+    <footer>
+        <div class="victory_background">
+            <img src="./img/trezub.svg" alt="Герб">
+            <h4 class="victory_h4">Перемога завжди за нами!</h4>
+            <p class="victory_descr">
+                Головна мета бандерогусей — служити гумору та доброті нашого народу. Ми забезпечимо вашу посмішку у часи, коли вона так необхідна
+            </p>
+        </div>
+    </footer>
+    <div class="modal-bgd" id="form-modal">
+
+        <form action="#" class="modal-form" data-netlifi="true">
+            <button class="close-btn">x </button>
+            <img src="./img/trezub.svg" alt="Герб">
+            <h5 class="modal-form_h5">
+                Поділися, будь ласка, поштою
+            </h5>
+            <p class="modal-form_descr">
+                та запиши гуся до бандерозагону
+            </p>
+            <div class="field">
+                <label for="user_name" class="name">Ім’я</label>
+                <input type="text" class="input" id="user_name">
+            </div>
+            <div class="field">
+                <label for="user_email" class="name">Email</label>
+                <input type="email" class="input" id="user_email">
+            </div>
+            <button class="b-gus-launch" id="launch-btn">Запустити гуся</button>
+        </form>
+    </div>
+    <div class="modal-bgd" id="success-modal">
+
+        <div class="modal-form">
+            <button class="close-btn">x </button>
+            <img src="./img/trezub.svg" alt="Герб">
+            <h5 class="modal-form_h5">
+                Дякуємо, гусь успішно запущений
+            </h5>
+            <h2 class="banderogus-h2">
+                Слава Україні!
+            </h2>
+            <button class="b-gus-launch">Героям Слава!</button>
+        </div>
+    </div>
+    <script src="./scripts/form.js"></script>
 </body>
 
 </html>
