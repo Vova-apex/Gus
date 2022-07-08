@@ -7,6 +7,7 @@ const form = document.querySelector('#form');
 const openFormModalBtn = document.querySelector('#open-form-modal-btn');
 const launchBtn = document.querySelector('#launch-btn');
 const closeBtns = document.querySelectorAll('.close-btn');
+const closeBtnsS = document.querySelectorAll('.b-gus-slava');
 
 openFormModalBtn.addEventListener('click', () => {
     formModal.classList.add(MODAL_ACTIVE_CLASS_NAME);
@@ -32,6 +33,14 @@ closeBtns.forEach(btn => {
     })
 })
 
+closeBtnsS.forEach(btn => {
+    btn.addEventListener('click', e => {
+        e.stopPropagation();
+        closeFormModal();
+        closeSuccessModal();
+    })
+})
+
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -45,7 +54,7 @@ form.addEventListener('submit', e => {
       .then(() => {
         closeFormModal();
         setTimeout(openSuccessModal, 700);
-        setTimeout(closeSuccessModal, 3000);
+        // setTimeout(closeSuccessModal, 3000);
       })
       .catch((error) => console.log('Sending form failed'));
 })
