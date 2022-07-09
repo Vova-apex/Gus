@@ -202,16 +202,16 @@ footer {
     transition: all 0.3s ease-in-out;
 }
 
-.modal-form-container{
+.modal-form-container {
     background: #FFF;
     padding: 32px 92px 60px 92px;
     position: relative;
 }
 
-.modal-form {    
+.modal-form {
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
 .modal-form_h5 {
@@ -269,9 +269,10 @@ footer {
 }
 
 .b-gus-slava {
+    margin-bottom: 10px;
     background: #FF6B0A;
     border-radius: 8px;
-    padding: 12px 24px;
+    padding: 12px 64px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -282,4 +283,15 @@ footer {
 .modal-active {
     opacity: 1;
     pointer-events: all;
+}
+
+.gus-anim {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
 }
